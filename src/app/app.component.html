@@ -1,1 +1,19 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>  
+        <button mat-button style="min-width: 20em;">Home</button>
+        <mat-divider></mat-divider>
+        <button mat-button style="min-width: 20em;">Applications</button>
+        <br>
+        <button mat-button style="min-width: 20em;">Developers</button>
+        <button mat-button style="min-width: 20em;">Documention</button>
+        <button mat-button style="min-width: 20em;">Subscriptions</button>
+    </mat-sidenav>
+    <!-- Body -->
+    <mat-toolbar color="primary">
+        <button mat-raised-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>&nbsp; DisNetwork</span>
+    </mat-toolbar>
+</mat-sidenav-container>
 <router-outlet></router-outlet>
