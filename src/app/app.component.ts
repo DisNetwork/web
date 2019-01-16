@@ -8,4 +8,12 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class AppComponent {
   title = 'DisNetwork';
+  buttons: String[] = [
+    'Home',
+    'Bots',
+    'Applications',
+    'Developers',
+    'Subscriptions',
+    'Documention'
+  ];
 }

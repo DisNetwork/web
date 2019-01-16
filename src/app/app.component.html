@@ -1,12 +1,11 @@
-<mat-sidenav-container>
-    <mat-sidenav #sidenav>  
-        <button mat-button style="min-width: 20em;">Home</button>
-        <mat-divider></mat-divider>
-        <button mat-button style="min-width: 20em;">Applications</button>
-        <br>
-        <button mat-button style="min-width: 20em;">Developers</button>
-        <button mat-button style="min-width: 20em;">Documention</button>
-        <button mat-button style="min-width: 20em;">Subscriptions</button>
+<mat-sidenav-container class="full-height">
+    <mat-sidenav mode="side" #sidenav autosize>
+        <mat-list dense>
+            <mat-list-item *ngFor="let button of buttons">
+                <button mat-button> {{ button }} </button>
+                <br>
+            </mat-list-item>
+        </mat-list>
     </mat-sidenav>
     <!-- Body -->
     <mat-toolbar color="primary">
@@ -15,5 +14,7 @@
         </button>
         <span>&nbsp; DisNetwork</span>
     </mat-toolbar>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
 </mat-sidenav-container>
-<router-outlet></router-outlet>
