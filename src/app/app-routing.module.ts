@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'developers', loadChildren: './developers/developers.module#DevelopersModule' }
+  { path: 'devs', loadChildren: './developers/developers.module#DevelopersModule' }
 ];
 
 @NgModule({

@@ -2,7 +2,7 @@
     <mat-sidenav mode="side" #sidenav autosize>
         <mat-list dense>
             <mat-list-item *ngFor="let button of buttons">
-                <button mat-button> {{ button }} </button>
+                <button mat-button (click)="onClick(button.route)"> {{ button.name }} </button>
                 <br>
             </mat-list-item>
         </mat-list>
