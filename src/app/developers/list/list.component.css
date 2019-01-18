@@ -1,11 +1,17 @@
-.bar {
-    background-color: #4F84C4;
+table {
+    width: 100%;
 }
 
-.workspace {
-    background-color: #ffff;
+.red, .green {
+    padding-left: 5px;
 }
 
-.container {
-    margin-top: 1em;
+.red {
+    color: red;
+    border-left: 5px solid red;
+}
+
+.green {
+    color: green;
+    border-left: 5px solid green;
 }

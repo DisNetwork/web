@@ -10,7 +10,7 @@ import { MatSort } from '@angular/material/sort';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name'];
+  displayedColumns: string[] = ['name', 'healthy'];
   dataSource: MatTableDataSource<Application>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -18,9 +18,9 @@ export class ListComponent implements OnInit {
 
   constructor() {
     const apps: Application[] = [
-      { id: '213112', name: 'App1' },
-      { id: '213142', name: 'App2' },
-      { id: '213114', name: 'App3' }
+      { id: '213112', name: 'App1', healthy: true },
+      { id: '213142', name: 'App2', healthy: false },
+      { id: '213114', name: 'App3', healthy: true }
     ];
     this.dataSource = new MatTableDataSource(apps);
   }

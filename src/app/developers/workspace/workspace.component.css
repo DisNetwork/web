@@ -1,0 +1,12 @@
+.typography {
+    color: black;
+}
+
+.container {
+    overflow: hidden;
+    height: auto;
+}
+
+.tab-group {
+    padding-bottom: 1em;
+}

@@ -8,7 +8,26 @@ body {
 
 .typography {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    color: #fff;
     margin-top: .5em;
     margin-bottom: .5em;
+}
+
+.bar {
+    background-color: #4F84C4;
+}
+
+.container {
+    margin-top: 1em;
+}
+
+.workspace {
+    background-color: #ffff;
+}
+
+.white {
+    color: white !important;
+}
+
+.full-width {
+    width: 100%;
 }

@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <p class="typegraphy">Client ID:</p>
+      <p class="typography value">XXX-XXXXX-XXX</p>
+      <mat-divider></mat-divider>
+      <p class="typography">Version:</p>
+      <mat-select placeholder="Version">
+          <mat-option [value]="test1">Test</mat-option>
+          <mat-option [value]="test2">Test</mat-option>
+          <mat-option [value]="test3">Test</mat-option>
+      </mat-select>
+      <div class="row" style="margin-bottom: 0.25em">
+        <div class="col-sm-6">
+          <button mat-stroked-button class="full-width" color="primary">Start</button>
+        </div>
+        <div class="col-sm-6">
+          <button mat-stroked-button class="full-width" color="primary">Stop</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Section </th>
+          <td mat-cell *matCellDef="let section"> {{ section.name }} </td>
+        </ng-container>
+        <ng-container matColumnDef="value">
+          <th mat-header-cell *matHeaderCellDef> Value </th>
+          <td mat-cell *matCellDef="let section"> {{ section.value }} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+  <button mat-raised-button color="warn">dElete iT</button>
+</div>
