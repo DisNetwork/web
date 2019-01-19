@@ -18,9 +18,9 @@ export class ListComponent implements OnInit {
 
   constructor() {
     const apps: Application[] = [
-      { id: '213112', name: 'App1', healthy: true },
-      { id: '213142', name: 'App2', healthy: false },
-      { id: '213114', name: 'App3', healthy: true }
+      { id: '213112', name: 'App1', healthy: true, bots: 100, guilds: 150 },
+      { id: '213142', name: 'App2', healthy: false, bots: 100, guilds: 150 },
+      { id: '213114', name: 'App3', healthy: true, bots: 100, guilds: 150 }
     ];
     this.dataSource = new MatTableDataSource(apps);
   }

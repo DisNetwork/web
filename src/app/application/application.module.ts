@@ -1,3 +1,4 @@
+import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
@@ -23,6 +24,7 @@ const routes: Routes = [
     MatTableModule,
     MatPaginatorModule,
     MatDividerModule,
+    MatButtonModule,
     RouterModule.forChild(routes)
   ]
 })

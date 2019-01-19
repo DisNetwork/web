@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2 avatar-container">
+      <img src="https://cdn.discordapp.com/avatars/216180750331019264/4354825ddb1d7794a20f8dc99a85dd7b.webp?size=128" class="avatar" width="128" height="128">
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-4">
+            <p class="typography"><b>Client ID:</b></p>
+        </div>
+        <div class="col-sm-8">
+            <p class="typography">1230123012302</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="typography"><b>Username:</b></p>
+        </div>
+        <div class="col-sm-8">
+          <p class="typography">HDBot#2030</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10">
+      <mat-form-field class="full-width">
+        <input matInput type="text" placeholder="Access Token" [value]="access_token" [disabled]="access_token_read_only">
+      </mat-form-field>
+    </div>
+    <div *ngIf="access_token_read_only" class="col-sm-2">
+      <button mat-button class="full-width" (click)="editAccessToken()">
+          <mat-icon class="mat-18">edit</mat-icon>
+      </button>
+    </div>
+    <div *ngIf="!access_token_read_only" class="col-sm-1">
+      <button mat-button class="full-width" (click)="postAccessToken()">
+          <mat-icon class="mat-18">done</mat-icon>
+      </button>
+    </div>
+    <div *ngIf="!access_token_read_only" class="col-sm-1">
+      <button mat-button class="full-width" (click)="clearAccessToken()">
+          <mat-icon class="mat-18">clear</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <button mat-raised-button class="full-width" color="primary">Start</button>
+    </div>
+    <div class="col-sm-2">
+      <button mat-raised-button class="full-width" color="primary" disabled>Stop</button>
+    </div>
+    <div class="col-sm-2">
+      <button mat-raised-button class="full-width" color="primary" disabled>Restart</button>
+    </div>
+  </div>
+</div>

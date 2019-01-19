@@ -1,5 +1,7 @@
 export interface Application {
     id: string;
     name: string;
-    healthy: boolean;
+    bots: number;
+    guilds: number;
+    healthy?: boolean;
 }

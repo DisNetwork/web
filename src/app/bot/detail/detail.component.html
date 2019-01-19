@@ -1,0 +1,29 @@
+<div class="container workspace">
+    <div class="row bar" style="padding-bottom: 1em;">
+      <div class="col-sm-4">
+        <p class="typography white">Bot 1</p>
+      </div>
+      <div class="col-sm-8"></div>
+    </div>
+    <mat-tab-group>
+        <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="tab-icon mat-18">info</mat-icon> Information
+            </ng-template>
+            <app-info></app-info>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="tab-icon mat-18">games</mat-icon> Activity
+            </ng-template>
+            <app-activity></app-activity>
+        </mat-tab>
+        <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="tab-icon mat-18">settings</mat-icon> Settings
+            </ng-template>
+            <app-settings></app-settings>
+        </mat-tab>
+    </mat-tab-group>
+  </div> 
+  

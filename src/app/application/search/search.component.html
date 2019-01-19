@@ -12,7 +12,9 @@
     <table mat-table [dataSource]="dataSource">
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef>Name</th>
-        <td mat-cell *matCellDef="let app"> {{ app.name }} </td>
+        <td mat-cell *matCellDef="let app">
+          <a routerLink="info">{{ app.name }}</a>
+        </td>
       </ng-container>
       <ng-container matColumnDef="bots">
         <th mat-header-cell *matHeaderCellDef>Bots</th>
