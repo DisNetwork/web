@@ -1,0 +1,10 @@
+div.warning {
+    border: 1.5px solid #ffcc00;
+    background-color: #f6d155;
+    margin-bottom: 0.5em;
+}
+
+mat-icon.warning {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
