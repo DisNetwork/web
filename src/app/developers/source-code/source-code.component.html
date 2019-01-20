@@ -1,28 +1,29 @@
 <div class="container">
-    <p class="typography">Source code:</p>
-    <mat-radio-group [(ngModel)]="type">
-      <mat-radio-button value="open" style="padding-right: 1em;">Open</mat-radio-button>
-      <mat-radio-button value="closed">Closed</mat-radio-button>
-    </mat-radio-group>
+  <app-unit-warning class="full-width"></app-unit-warning>
+  <p class="typography">Source code:</p>
+  <mat-radio-group [(ngModel)]="type">
+    <mat-radio-button value="open" style="padding-right: 1em;">Open</mat-radio-button>
+    <mat-radio-button value="closed">Closed</mat-radio-button>
+  </mat-radio-group>
 
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Name" [value]="fileUrl" />
+  </mat-form-field>
+  <div *ngIf="type === 'open'">
+    <button mat-raised-button color="primary">Link with Github</button>
+  </div>
+  <div *ngIf="type === 'closed'">
     <mat-form-field class="full-width">
-      <input matInput placeholder="Name" [value]="fileUrl" />
+      <input matInput placeholder="URL" [value]="fileUrl" />
     </mat-form-field>
-    <div *ngIf="type === 'open'">
-      <button mat-raised-button color="primary">Link with Github</button>
-    </div>
-    <div *ngIf="type === 'closed'">
-      <mat-form-field class="full-width">
-        <input matInput placeholder="URL" [value]="fileUrl" />
-      </mat-form-field>
-      <div class="row">
-        <div class="col-sm-6">
-          <button mat-raised-button class="full-width" color="primay">Browse</button>
-        </div>
-        <div class="col-sm-6">
-          <button mat-raised-button class="full-width" color="primay" disabled>Upload</button>
-        </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <button mat-raised-button class="full-width" color="primay">Browse</button>
       </div>
-      <br>
-    </div>    
+      <div class="col-sm-6">
+        <button mat-raised-button class="full-width" color="primay" disabled>Upload</button>
+      </div>
+    </div>
+    <br>
+  </div>
 </div>

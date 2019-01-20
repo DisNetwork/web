@@ -16,6 +16,7 @@ import { InformationComponent } from './information/information.component';
 import { SourceCodeComponent } from './source-code/source-code.component';
 import { FormsModule } from '@angular/forms';
 import { TestBotComponent } from './test-bot/test-bot.component';
+import { UnitModule } from '../unit/unit.module';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
+    UnitModule,
     MatTableModule,
     MatInputModule,
     MatPaginatorModule,

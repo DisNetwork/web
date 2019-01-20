@@ -9,6 +9,8 @@ import { SearchComponent } from './search/search.component';
 import { DetailComponent } from './detail/detail.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { UnitModule } from '../unit/unit.module';
 
 const routes: Routes = [
   { path: '', component: SearchComponent },
@@ -19,12 +21,14 @@ const routes: Routes = [
   declarations: [SearchComponent, DetailComponent],
   imports: [
     CommonModule,
+    UnitModule,
     MatInputModule,
     MatFormFieldModule,
     MatTableModule,
     MatPaginatorModule,
     MatDividerModule,
     MatButtonModule,
+    MatIconModule,
     RouterModule.forChild(routes)
   ]
 })

@@ -16,6 +16,7 @@ import { DetailComponent } from './detail/detail.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ActivityComponent } from './activity/activity.component';
 import { SettingsComponent } from './settings/settings.component';
+import { UnitModule } from '../unit/unit.module';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   declarations: [ListComponent, InfoComponent, DetailComponent, ActivityComponent, SettingsComponent],
   imports: [
     CommonModule,
+    UnitModule,
     FormsModule,
     MatTableModule,
     MatButtonModule,
