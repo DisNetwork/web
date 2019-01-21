@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'DisNetwork';
   buttons: any[] = [
-    { name: 'Home', route: 'home'},
+    { name: 'Home', route: ''},
     { name: 'Bots', route: 'bots'},
     { name: 'Applications', route: 'apps' },
     { name: 'Developers', route: 'devs'},
