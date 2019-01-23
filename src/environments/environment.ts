@@ -6,7 +6,15 @@ export const environment = {
   production: false,
   https: false,
   hostname: 'localhost',
-  port: 2030
+  port: 2030,
+  firebase: {
+    apiKey: 'AIzaSyD5Pu8mv29W0P8wKp83U76KqJ6_TYc1Awk',
+    authDomain: 'disnetwork.firebaseapp.com',
+    databaseURL: 'https://disnetwork.firebaseio.com',
+    projectId: 'disnetwork',
+    storageBucket: 'disnetwork.appspot.com',
+    messagingSenderId: '460413581477'
+  }
 };
 
 /*

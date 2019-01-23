@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,6 +11,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AngularFireModule } from '@angular/fire';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { AppComponent } from './app.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    AngularFireModule.initializeApp(environment.firebase, 'DisNetwork')
   ],
   providers: [],
   bootstrap: [AppComponent]
